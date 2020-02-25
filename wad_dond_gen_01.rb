@@ -35,6 +35,10 @@ module DOND_Game
 			return "Andrej Szalma, Matey Krastev, Antonia Duncan, Cammy Begg, Laura McKenna"
 		end
 
+		def student_id()
+			return "123456789"
+		end
+
 		# Any code/methods aimed at passing the RSpect tests should be added above.
 
 	end
