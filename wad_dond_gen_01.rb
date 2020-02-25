@@ -53,6 +53,7 @@ module DOND_Game
 			@chosenbox = 0
 			@selectedbox = 0
 			@turn= 0
+#			@turnsleft = GOES
 			@winner = 0
 			@played = 0
 			@wins = 0
@@ -171,6 +172,29 @@ module DOND_Game
 			return value / 2
 		end
 
+ 		def numberofboxesclosed()
+			count = 0
+			for i in (0..@openedboxes.length) do
+				if @openedboxes[i] == 0
+					count += 1
+				end
+			end
+			return count
+		end
+=begin
+		def incrementturn()
+			@turn += 1
+			@turnsleft -= 1
+		end
+
+		def getturnsleft()
+			return @turnsleft
+		end
+
+		def finish()
+			@output.puts("... game finished.")
+		end
+=end
 		# Any code/methods aimed at passing the RSpect tests should be added above.
 	end
 end
