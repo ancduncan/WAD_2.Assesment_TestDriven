@@ -83,6 +83,10 @@ module DOND_Game
 			end
 		end
 
+		def showamounts()
+			
+		end
+
 		# Any code/methods aimed at passing the RSpect tests should be added above.
 
 	end
