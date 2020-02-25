@@ -186,11 +186,11 @@ module DOND_Game
 			@turn += 1
 			@turnsleft -= 1
 		end
-=begin
+
 		def getturnsleft()
 			return @turnsleft
 		end
-
+=begin
 		def finish()
 			@output.puts("... game finished.")
 		end
