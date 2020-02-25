@@ -67,6 +67,10 @@ module DOND_Game
 			@sequence = @values
 		end
 
+		def showboxes()
+		
+		end
+
 		# Any code/methods aimed at passing the RSpect tests should be added above.
 
 	end
