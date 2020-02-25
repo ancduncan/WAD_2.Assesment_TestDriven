@@ -114,6 +114,13 @@ module DOND_Game
 			@output.puts("Chosen box: [#{@chosenbox}] contains: #{@sequence[@chosenbox - 1]}")	
 		end
 
+		def displaychosenboxprompt()
+			@output.puts("Enter the number of the box you wish to keep.")
+		end
+
+		def displaychosenboxerror()
+			@output.puts("Error: Box number must be 1 to 22.")
+		end
 		# Any code/methods aimed at passing the RSpect tests should be added above.
 
 	end
