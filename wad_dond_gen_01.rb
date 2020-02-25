@@ -53,7 +53,7 @@ module DOND_Game
 			@chosenbox = 0
 			@selectedbox = 0
 			@turn= 0
-#			@turnsleft = GOES
+			@turnsleft = GOES
 			@winner = 0
 			@played = 0
 			@wins = 0
@@ -181,12 +181,12 @@ module DOND_Game
 			end
 			return count
 		end
-=begin
+
 		def incrementturn()
 			@turn += 1
 			@turnsleft -= 1
 		end
-
+=begin
 		def getturnsleft()
 			return @turnsleft
 		end
