@@ -190,11 +190,11 @@ module DOND_Game
 		def getturnsleft()
 			return @turnsleft
 		end
-=begin
+
 		def finish()
 			@output.puts("... game finished.")
 		end
-=end
+
 		# Any code/methods aimed at passing the RSpect tests should be added above.
 	end
 end
