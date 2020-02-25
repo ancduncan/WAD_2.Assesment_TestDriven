@@ -84,7 +84,13 @@ module DOND_Game
 		end
 
 		def showamounts()
-			
+			col1 = 0
+			col2 = 11
+			for i in (0..10)
+				c1 = @amounts[col1 + i]
+				c2 = @amounts[col2 + i]
+				@output.puts("#{c1}   #{c2}")
+			end
 		end
 
 		# Any code/methods aimed at passing the RSpect tests should be added above.
