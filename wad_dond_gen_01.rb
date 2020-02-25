@@ -157,8 +157,13 @@ module DOND_Game
 		def displayselectboxprompt()
 			@output.puts("Enter the number of the box you wish to open. Enter returns to menu.")
 		end
-		# Any code/methods aimed at passing the RSpect tests should be added above.
+		
+		def openbox(num)
+			@openedboxes[num-1] = 1
+			@output.puts("|#{num}| Status: Opened")
+		end
 
+		# Any code/methods aimed at passing the RSpect tests should be added above.
 	end
 end
 
