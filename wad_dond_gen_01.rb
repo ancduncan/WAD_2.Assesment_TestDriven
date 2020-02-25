@@ -121,6 +121,24 @@ module DOND_Game
 		def displaychosenboxerror()
 			@output.puts("Error: Box number must be 1 to 22.")
 		end
+
+		def displayanalysis()
+			@output.puts("Game analysis...")
+			for i in (0..21) do
+				s = "_"
+				g = "_"
+				b = i + 1
+				if @openedboxes[i] == 0
+					s = "Closed"
+					g = "[#{b}]"
+				else
+					s = "Opened"
+					g = "|#{b}|"
+				end
+				@output.puts("#{g} Status: #{s}")
+			end
+		end
+
 		# Any code/methods aimed at passing the RSpect tests should be added above.
 
 	end
