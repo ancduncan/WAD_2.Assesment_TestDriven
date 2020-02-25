@@ -63,6 +63,10 @@ module DOND_Game
 			@amounts = @values		
 		end
 
+		def assignvaluestoboxes()
+
+		end
+
 		# Any code/methods aimed at passing the RSpect tests should be added above.
 
 	end
