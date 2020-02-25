@@ -30,6 +30,7 @@ module DOND_Game
 			@output.puts("Welcome to Deal or No Deal!")
 			@output.puts("Designed by: " + self.created_by())
 			@output.puts("StudentID: " + self.student_id())
+			@output.puts("Starting game...")
 		end
 
 		def created_by()
