@@ -163,6 +163,10 @@ module DOND_Game
 			@output.puts("|#{num}| Status: Opened")
 		end
 
+		def bankerphoneswithvalue(value)
+			@output.puts("Banker offers you for your chosen box: #{value}")
+		end
+
 		# Any code/methods aimed at passing the RSpect tests should be added above.
 	end
 end
