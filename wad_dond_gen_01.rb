@@ -139,6 +139,16 @@ module DOND_Game
 			end
 		end
 
+		def boxvalid(num)
+			num = num.to_i
+
+			if (num > 0) && (num < 23)
+				return 1
+			else
+				return 0
+			end
+		end
+
 		# Any code/methods aimed at passing the RSpect tests should be added above.
 
 	end

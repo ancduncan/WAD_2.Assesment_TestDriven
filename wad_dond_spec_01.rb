@@ -224,7 +224,8 @@ module DOND_Game
 				end
 				@game.displayanalysis
 			end
-			it "should check that entered box number is between 1..22 when guess received by method boxvalid" do
+
+=begin 			it "should check that entered box number is between 1..22 when guess received by method boxvalid" do
 				@game.resetgame
 				@game.assignvaluestoboxes
 				for i in (0..22) do
@@ -238,6 +239,7 @@ module DOND_Game
 				end
 				
 			end
+=end			
 			it "should display log of boxes selected when method showboxesselected called" do
 				@game.resetgame
 				@game.assignvaluestoboxes
