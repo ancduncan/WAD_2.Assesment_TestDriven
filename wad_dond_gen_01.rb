@@ -47,7 +47,22 @@ module DOND_Game
 
 		def resetgame()
 			@output.puts("New game...")
+			@resetgame
+			@sequence = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+			@selectedboxes = []
+			@openedboxes = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+			@chosenbox = 0
+			@selectedbox = 0
+			@turn= 0
+			@winner = 0
+			@played = 0
+			@wins = 0
+			@losses = 0
+			@guess = ""
+			@values = [0.01,0.10,0.50,1.00,5.00,10.00,50.00,100.00,250.00,500.00,750.00,1000.00,3000.00,5000.00,10000.00,15000.00,20000.00,35000.00,50000.00,75000.00,100000.00,250000.00]
+			@amounts = @values		
 		end
+
 		# Any code/methods aimed at passing the RSpect tests should be added above.
 
 	end
