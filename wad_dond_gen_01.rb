@@ -41,6 +41,10 @@ module DOND_Game
 			return "123456789"
 		end
 
+		def displaymenu()
+			@output.puts("Menu: (1) Play | (2) New | (3) Analysis | (9) Exit")
+		end
+
 		# Any code/methods aimed at passing the RSpect tests should be added above.
 
 	end
