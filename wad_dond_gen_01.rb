@@ -101,8 +101,10 @@ module DOND_Game
 		def setchosenbox(num)
 			@chosenbox = num
 		end
-		
-		
+
+		def getchosenbox()
+			return @chosenbox
+		end
 
 		# Any code/methods aimed at passing the RSpect tests should be added above.
 
