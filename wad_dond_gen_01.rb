@@ -28,6 +28,7 @@ module DOND_Game
 	
 		def start()
 			@output.puts("Welcome to Deal or No Deal!")
+			@output.puts("Designed by: " + self.created_by())
 		end
 
 		def created_by()
