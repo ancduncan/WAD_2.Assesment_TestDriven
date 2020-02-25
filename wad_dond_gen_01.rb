@@ -98,8 +98,12 @@ module DOND_Game
 			@amounts[index] = "    "
 		end
 
+		def setchosenbox(num)
+			@chosenbox = num
+		end
 		
 		
+
 		# Any code/methods aimed at passing the RSpect tests should be added above.
 
 	end
