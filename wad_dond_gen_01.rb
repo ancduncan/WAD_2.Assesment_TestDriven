@@ -109,7 +109,10 @@ module DOND_Game
 		def displaychosenbox()
 			@output.puts("Chosen box: [#{@chosenbox}]")	
 		end
-		
+
+		def displaychosenboxvalue()
+			@output.puts("Chosen box: [#{@chosenbox}] contains: #{@sequence[@chosenbox - 1]}")	
+		end
 
 		# Any code/methods aimed at passing the RSpect tests should be added above.
 
