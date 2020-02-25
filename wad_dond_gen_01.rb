@@ -46,7 +46,7 @@ module DOND_Game
 		end
 
 		def resetgame()
-		
+			@output.puts("New game...")
 		end
 		# Any code/methods aimed at passing the RSpect tests should be added above.
 
