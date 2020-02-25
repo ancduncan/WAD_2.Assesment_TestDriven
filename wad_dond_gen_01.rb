@@ -71,7 +71,6 @@ module DOND_Game
 				s = "_"
 				g = "_"
 				b = i + 1
-#					@output.should_receive(:puts).with("Box #{b}: [#{b}] Status: #{@game.openedboxes[i]}")
 				if @openedboxes[i] == 0
 					s = "Closed"
 					g = "[#{b}]"
@@ -81,6 +80,7 @@ module DOND_Game
 				end
 				@output.print("#{g} ")					
 			end
+			@output.print("*#{@chosenbox}* ")
 		end
 
 		def showamounts()
