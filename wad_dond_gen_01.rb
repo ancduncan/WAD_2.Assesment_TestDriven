@@ -154,6 +154,9 @@ module DOND_Game
 			@output.puts("Log: #{@selectedboxes.inspect}")
 		end
 
+		def displayselectboxprompt()
+			@output.puts("Enter the number of the box you wish to open. Enter returns to menu.")
+		end
 		# Any code/methods aimed at passing the RSpect tests should be added above.
 
 	end
