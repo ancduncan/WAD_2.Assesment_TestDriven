@@ -167,6 +167,10 @@ module DOND_Game
 			@output.puts("Banker offers you for your chosen box: #{value}")
 		end
 
+		def bankercalcsvalue(value)
+			return value / 2
+		end
+
 		# Any code/methods aimed at passing the RSpect tests should be added above.
 	end
 end
