@@ -26,8 +26,13 @@ module DOND_Game
 		
 		# Any code/methods aimed at passing the RSpect tests should be added below.
 	
-	
+		def start()
+			@output.puts("Welcome to Deal or No Deal!")
+		end
 
+		def created_by()
+			return "Andrej Szalma, Matey Krastev, Antonia Duncan, Cammy Begg, Laura McKenna"
+		end
 
 		# Any code/methods aimed at passing the RSpect tests should be added above.
 

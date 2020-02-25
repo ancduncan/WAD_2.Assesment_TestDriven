@@ -37,7 +37,7 @@ module DOND_Game
 				@game.start
 			end
 			it "should contain a method created_by which returns the students name" do
-				studentname = "Nigel Beacham"			# -----Change text to your own name-----
+				studentname = "Andrej Szalma, Matey Krastev, Antonia Duncan, Cammy Begg, Laura McKenna"			# -----Change text to your own name-----
 				@game.created_by.should == studentname		
 			end
 			it "should display a message showing who designed the game when the method start called" do
@@ -45,7 +45,7 @@ module DOND_Game
 				@game.start
 			end
 			it "should contain a method student_id which returns the students ID number" do
-				studentid = "123456789"				# -----Change text to your own student ID-----
+				studentid = "123456789"				# TODO: -----Change text to your own student ID-----
 				@game.student_id.should == studentid
 			end
 			it "should display a message showing the id of the student when the method start called" do
