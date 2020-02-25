@@ -47,7 +47,6 @@ module DOND_Game
 
 		def resetgame()
 			@output.puts("New game...")
-			@resetgame
 			@sequence = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 			@selectedboxes = []
 			@openedboxes = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
@@ -68,7 +67,20 @@ module DOND_Game
 		end
 
 		def showboxes()
-		
+			for i in (0..21) do
+				s = "_"
+				g = "_"
+				b = i + 1
+#					@output.should_receive(:puts).with("Box #{b}: [#{b}] Status: #{@game.openedboxes[i]}")
+				if @openedboxes[i] == 0
+					s = "Closed"
+					g = "[#{b}]"
+				else
+					s = "Opened"
+					g = "|#{b}|"
+				end
+				@output.print("#{g} ")					
+			end
 		end
 
 		# Any code/methods aimed at passing the RSpect tests should be added above.
