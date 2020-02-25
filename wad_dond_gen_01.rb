@@ -93,6 +93,13 @@ module DOND_Game
 			end
 		end
 
+		def removeamount(value)
+			index = @amounts.index(value)
+			@amounts[index] = "    "
+		end
+
+		
+		
 		# Any code/methods aimed at passing the RSpect tests should be added above.
 
 	end
