@@ -144,13 +144,12 @@ module DOND_Game
 			num = num.to_i
 
 			if (num > 0) && (num < 23)
-				return 1
-			else
 				return 0
+			else
+				return 1
 			end
 		end
 
-		# In Test the function is called showboxesselected (I think its only a typo)
 		def showselectedboxes()
 			@output.puts("Log: #{@selectedboxes.inspect}")
 		end
