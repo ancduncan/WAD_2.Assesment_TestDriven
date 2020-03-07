@@ -45,7 +45,7 @@ module DOND_Game
 				@game.start
 			end
 			it "should contain a method student_id which returns the students ID number" do
-				studentid = "123456789"				# TODO: -----Change text to your own student ID-----
+				studentid = "123456789,...,51876358,...,..."				# TODO: -----Change text to your own student ID-----
 				@game.student_id.should == studentid
 			end
 			it "should display a message showing the id of the student when the method start called" do
