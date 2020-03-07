@@ -44,7 +44,8 @@ module DOND_Game
 		def displaymenu()
 			@output.puts("Menu: (1) Play | (2) New | (3) Analysis | (9) Exit")
 		end
-
+		
+		#This will reset all of the variables needed in the game and resets their value to zero
 		def resetgame()
 			@output.puts("New game...")
 			@sequence = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
@@ -67,6 +68,7 @@ module DOND_Game
 			@sequence = @values
 		end
 
+		#This is an iteraion that will check the value of @openedboxes and see if it is 0 or 1. If it is 0 that means the box is closed, otherwise that means the box is opened	
 		def showboxes()
 			for i in (0..21) do
 				s = "_"
@@ -84,6 +86,7 @@ module DOND_Game
 			@output.print("*#{@chosenbox}* ")
 		end
 
+		#this shows the values of the amounts in the form of columns. This is given in order to let the player know about the other boxes in the game	
 		def showamounts()
 			col1 = 0
 			col2 = 11
@@ -99,14 +102,17 @@ module DOND_Game
 			@amounts[index] = "    "
 		end
 
+		#this will set the chosen box equal to the input
 		def setchosenbox(num)
 			@chosenbox = num
 		end
 
+		#this shows that the getchosenbox method has value of the @chosenbox
 		def getchosenbox()
 			return @chosenbox
 		end
 
+		#this creates a string with the number that the player chose at the beginning of the game
 		def displaychosenbox()
 			@output.puts("Chosen box: [#{@chosenbox}]")	
 		end
@@ -115,6 +121,7 @@ module DOND_Game
 			@output.puts("Chosen box: [#{@chosenbox}] contains: #{@sequence[@chosenbox - 1]}")	
 		end
 
+		#this displays a string that will ask the player which number the player would like to keep
 		def displaychosenboxprompt()
 			@output.puts("Enter the number of the box you wish to keep.")
 		end
@@ -123,6 +130,7 @@ module DOND_Game
 			@output.puts("Error: Box number must be 1 to 22.")
 		end
 
+		#this is another iteration chekcing the value of the @openedboxes. If it is closed it is 0 and otherwise is open. This will then print the result.
 		def displayanalysis()
 			@output.puts("Game analysis...")
 			for i in (0..21) do
@@ -140,6 +148,7 @@ module DOND_Game
 			end
 		end
 
+		#this will check to see whether the box is 'valid', ie. within the range of designated numbers (1-22). It will display 0 for valid and 1 for invalid
 		def boxvalid(num)
 			num = num.to_i
 
@@ -150,6 +159,7 @@ module DOND_Game
 			end
 		end
 
+		#this will show a log of openedboxes (the boxes already opened)
 		def showselectedboxes()
 			@output.puts("Log: #{@selectedboxes.inspect}")
 		end
@@ -170,7 +180,8 @@ module DOND_Game
 		def bankercalcsvalue(value)
 			return value / 2
 		end
-
+		
+		#an iteration to see how many boxes are still closed by checking the the value which the box  has (0 for closed, and opened otherwise) from @openedboxes
  		def numberofboxesclosed()
 			count = 0
 			for i in (0..@openedboxes.length) do
@@ -190,6 +201,7 @@ module DOND_Game
 			return @turnsleft
 		end
 
+		#puts a string saying the game is finished
 		def finish()
 			@output.puts("... game finished.")
 		end
