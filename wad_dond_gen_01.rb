@@ -64,7 +64,7 @@ module DOND_Game
 		end
 
 		def assignvaluestoboxes()
-			@sequence = @values
+			@sequence = @values.shuffle
 		end
 
 		def showboxes()
