@@ -65,7 +65,7 @@ module DOND_Game
 		end
 
 		def assignvaluestoboxes()
-			@sequence = @values
+			@sequence = @values.shuffle
 		end
 
 		#This is an iteraion that will check the value of @openedboxes and see if it is 0 or 1. If it is 0 that means the box is closed, otherwise that means the box is opened	
