@@ -38,7 +38,7 @@ module DOND_Game
 		end
 
 		def student_id()
-			return "51893729, 51987311, 51876358, ..., 51983282"
+			return "51893729, 51987311, 51876358, 51982811, 51983282"
 		end
 
 		def displaymenu()
